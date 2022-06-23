@@ -6,10 +6,9 @@ n
 
 
 
-
 w
 EOF
-mkfs.xfs /dev/sda1
+mkfs.xfs -f /dev/sda1
 mount /dev/sda1 /mnt
 pacstrap /mnt
 genfstab /mnt>/mnt/etc/fstab
